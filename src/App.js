@@ -1,4 +1,5 @@
 import './App.css';
+import CreateArea from './component/CreateArea';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import Note from './component/Note';
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <CreateArea/>
       {
         notes.map(item=>(
           <Note key={item.key} title={item.title} content={item.content}/>
